@@ -1,0 +1,15 @@
+function getRandomIntInclusive(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+      };
+var element1 = document.getElementById("divSection1");
+element.innerHTML = getRandomIntInclusive(1,9);
+
+var element2 = document.getElementById("divSection2");
+element2.innerHTML = getRandomIntInclusive(1,9);
+
+var element3 = document.getElementById("divSection3");
+element3.innerHTML = getRandomIntInclusive(1,9);
+
+
+;
+
