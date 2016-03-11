@@ -1,7 +1,6 @@
 function getRandomIntInclusive(min, max) {
           return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 // function calcMatches (matchCount){
 //   this.matchCount = matchCount;
 //   if ((element1.innerHTML === element2.innerHTML) &&
@@ -43,14 +42,16 @@ function getRandomIntInclusive(min, max) {
 function dispMatchingNumberRow (row,mesg,num){
 	document.getElementById(mesg).innerHTML =
     "In row" + row + " matching numbers found for " + num ;
-};
+}
 function dispMatchingNumberCol (col,mesg,num){
-  console.log("In col" + col + " matching numbers found for " + num);
-	document.getElementById(mesg).innerHTML =
+  document.getElementById(mesg).innerHTML =
     "In col" + col + " matching numbers found for " + num ;
-};
+}
+function dispMatchingNumberDiag (coordinates,mesg,num){
+  document.getElementById(mesg).innerHTML =
+    "In diagonal blocks " + coordinates + " matching numbers found for " + num ;
+}
 
-// var rowNo = 0;
 var numMatched = 0;
 var numMatched2 = 0;
 var numMatched3 = 0;
@@ -59,9 +60,8 @@ var numMatched5 = 0;
 var numMatched6 = 0;
 var numMatched7 = 0;
 var numMatched8 = 0;
-var numMatched9 = 0;
-// var noOfMatches = 0;
 
+// var noOfMatches = 0;
 var element1 = document.getElementById("divSection1");
 element1.innerHTML = getRandomIntInclusive(1,3);
 
@@ -230,9 +230,51 @@ if (element3.innerHTML === element9.innerHTML){
 }
 
 // diagonal top left to bottom right
+if (element1.innerHTML === element5.innerHTML &&
+    element5.innerHTML === element9.innerHTML){
+    document.getElementById("divSection1").classList.add("highlight");
+    document.getElementById("divSection5").classList.add("highlight");
+    document.getElementById("divSection9").classList.add("highlight");
+    numMatched7 = document.getElementById("divSection1").innerHTML;
+    dispMatchingNumberDiag("1,5,9","message7",numMatched7);
+    console.log ("Diagonal 1,5,9:" + numMatched7);
+    }
+  else if (element1.innerHTML === element5.innerHTML ){
+    document.getElementById("divSection1").classList.add("highlight");
+    document.getElementById("divSection5").classList.add("highlight");
+    numMatched7 = document.getElementById("divSection1").innerHTML;
+    dispMatchingNumberDiag("1,5","message7",numMatched7);
+    console.log ("Diagonal 1-5: " + numMatched7);
+    }
+    else if (element5.innerHTML === element9.innerHTML){
+      document.getElementById("divSection5").classList.add("highlight");
+      document.getElementById("divSection9").classList.add("highlight");
+      numMatched7 = document.getElementById("divSection5").innerHTML;
+      dispMatchingNumberDiag("5,9","message7",numMatched7);
+      console.log ("Diagonal 5-9: " + numMatched7);
+    }
 
-if (element1.innerHTML === element5.innerHTML){
-  document.getElementById("divsection1").classList.add("highlight");
-  document.getElementById("divSection5").classList.add("highlight");
-
-}
+// diagonal top right to bottom left
+if (element3.innerHTML === element5.innerHTML &&
+    element5.innerHTML === element9.innerHTML){
+    document.getElementById("divSection3").classList.add("highlight");
+    document.getElementById("divSection5").classList.add("highlight");
+    document.getElementById("divSection7").classList.add("highlight");
+    numMatched8 = document.getElementById("divSection3").innerHTML;
+    dispMatchingNumberDiag("3,5,7","message8",numMatched8);
+    console.log ("Diagonal 3,5,7: " + numMatched8);
+    }
+  else if (element3.innerHTML === element5.innerHTML){
+    document.getElementById("divSection3").classList.add("highlight");
+    document.getElementById("divSection5").classList.add("highlight");
+    numMatched8 = document.getElementById("divSection3").innerHTML;
+    dispMatchingNumberDiag("3,5","message8",numMatched8);
+    console.log ("Diagonal 3-5: " + numMatched8);
+    }
+    else if (element5.innerHTML === element7.innerHTML){
+      document.getElementById("divSection5").classList.add("highlight");
+      document.getElementById("divSection7").classList.add("highlight");
+      numMatched8 = document.getElementById("divSection5").innerHTML;
+      dispMatchingNumberDiag("5,7","message8",numMatched8);
+      console.log ("Diagonal 5-7: " + numMatched8);
+    }
