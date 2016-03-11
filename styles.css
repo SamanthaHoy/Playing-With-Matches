@@ -1,6 +1,6 @@
 h1 {
   font-family: fantasy;
-  font-size: 50px;
+  font-size: 40px;
   color: black;
   margin:auto;
 }
@@ -32,9 +32,21 @@ h1 {
   margin:auto;
 }
 
+body {
+  background-color: lightblue;
+}
 .message {
   font-family:fantasy;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+#main {
+  float:left;
+  padding-left: 150px;
+}
+#messages {
+  float:right;
+  margin-right: 150px;
 }
 
 button {
@@ -45,6 +57,6 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+  /*  display: inline-block;*/
     font-size: 16px;
 }

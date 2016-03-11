@@ -237,21 +237,21 @@ if (element1.innerHTML === element5.innerHTML &&
     document.getElementById("divSection9").classList.add("highlight");
     numMatched7 = document.getElementById("divSection1").innerHTML;
     dispMatchingNumberDiag("1,5,9","message7",numMatched7);
-    console.log ("Diagonal 1,5,9:" + numMatched7);
+    // console.log ("Diagonal 1,5,9:" + numMatched7);
     }
   else if (element1.innerHTML === element5.innerHTML ){
     document.getElementById("divSection1").classList.add("highlight");
     document.getElementById("divSection5").classList.add("highlight");
     numMatched7 = document.getElementById("divSection1").innerHTML;
     dispMatchingNumberDiag("1,5","message7",numMatched7);
-    console.log ("Diagonal 1-5: " + numMatched7);
+    // console.log ("Diagonal 1-5: " + numMatched7);
     }
     else if (element5.innerHTML === element9.innerHTML){
       document.getElementById("divSection5").classList.add("highlight");
       document.getElementById("divSection9").classList.add("highlight");
       numMatched7 = document.getElementById("divSection5").innerHTML;
       dispMatchingNumberDiag("5,9","message7",numMatched7);
-      console.log ("Diagonal 5-9: " + numMatched7);
+      // console.log ("Diagonal 5-9: " + numMatched7);
     }
 
 // diagonal top right to bottom left
@@ -262,19 +262,19 @@ if (element3.innerHTML === element5.innerHTML &&
     document.getElementById("divSection7").classList.add("highlight");
     numMatched8 = document.getElementById("divSection3").innerHTML;
     dispMatchingNumberDiag("3,5,7","message8",numMatched8);
-    console.log ("Diagonal 3,5,7: " + numMatched8);
+    // console.log ("Diagonal 3,5,7: " + numMatched8);
     }
   else if (element3.innerHTML === element5.innerHTML){
     document.getElementById("divSection3").classList.add("highlight");
     document.getElementById("divSection5").classList.add("highlight");
     numMatched8 = document.getElementById("divSection3").innerHTML;
     dispMatchingNumberDiag("3,5","message8",numMatched8);
-    console.log ("Diagonal 3-5: " + numMatched8);
+    // console.log ("Diagonal 3-5: " + numMatched8);
     }
     else if (element5.innerHTML === element7.innerHTML){
       document.getElementById("divSection5").classList.add("highlight");
       document.getElementById("divSection7").classList.add("highlight");
       numMatched8 = document.getElementById("divSection5").innerHTML;
       dispMatchingNumberDiag("5,7","message8",numMatched8);
-      console.log ("Diagonal 5-7: " + numMatched8);
+      // console.log ("Diagonal 5-7: " + numMatched8);
     }
