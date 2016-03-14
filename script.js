@@ -63,31 +63,31 @@ var numMatched8 = 0;
 
 // var noOfMatches = 0;
 var element1 = document.getElementById("divSection1");
-element1.innerHTML = getRandomIntInclusive(1,3);
+element1.innerHTML = getRandomIntInclusive(1,9);
 
 var element2 = document.getElementById("divSection2");
-element2.innerHTML = getRandomIntInclusive(1,3);
+element2.innerHTML = getRandomIntInclusive(1,9);
 
 var element3 = document.getElementById("divSection3");
-element3.innerHTML = getRandomIntInclusive(1,3);
+element3.innerHTML = getRandomIntInclusive(1,9);
 
 var element4 = document.getElementById("divSection4");
-element4.innerHTML = getRandomIntInclusive(1,3);
+element4.innerHTML = getRandomIntInclusive(1,9);
 
 var element5 = document.getElementById("divSection5");
-element5.innerHTML = getRandomIntInclusive(1,3);
+element5.innerHTML = getRandomIntInclusive(1,9);
 
 var element6 = document.getElementById("divSection6");
-element6.innerHTML = getRandomIntInclusive(1,3);
+element6.innerHTML = getRandomIntInclusive(1,9);
 
 var element7 = document.getElementById("divSection7");
-element7.innerHTML = getRandomIntInclusive(1,3);
+element7.innerHTML = getRandomIntInclusive(1,9);
 
 var element8 = document.getElementById("divSection8");
-element8.innerHTML = getRandomIntInclusive(1,3);
+element8.innerHTML = getRandomIntInclusive(1,9);
 
 var element9 = document.getElementById("divSection9");
-element9.innerHTML = getRandomIntInclusive(1,3);
+element9.innerHTML = getRandomIntInclusive(1,9);
 
 // document.getElementById("myButton").addEventListener("click", reloadPage);
 document.getElementById("myButton").addEventListener("click", function(){
@@ -269,12 +269,12 @@ if (element3.innerHTML === element5.innerHTML &&
     document.getElementById("divSection5").classList.add("highlight");
     numMatched8 = document.getElementById("divSection3").innerHTML;
     dispMatchingNumberDiag("3,5","message8",numMatched8);
-    // console.log ("Diagonal 3-5: " + numMatched8);
+    console.log ("Diagonal 3-5: " + numMatched8);
     }
     else if (element5.innerHTML === element7.innerHTML){
       document.getElementById("divSection5").classList.add("highlight");
       document.getElementById("divSection7").classList.add("highlight");
       numMatched8 = document.getElementById("divSection5").innerHTML;
       dispMatchingNumberDiag("5,7","message8",numMatched8);
-      // console.log ("Diagonal 5-7: " + numMatched8);
+      console.log ("Diagonal 5-7: " + numMatched8);
     }

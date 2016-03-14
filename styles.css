@@ -1,15 +1,23 @@
 h1 {
   font-family: fantasy;
-  font-size: 40px;
-  color: black;
+  font-size: 65px;
+  color: #669900;
+  text-align: center;
   margin:auto;
+}
+
+p {
+  font-family: arial;
+  font-style: italic;
+  font-size: 25px;
+  color:darkgreen;
 }
 
 .number {
   border-radius: 20px;
   background-color: #3300CC;
   font-family: sans-serif;
-  font-size: 100px;
+  font-size: 120px;
   color: #33CCCC ;
   height: 120px;
   width:120px;
@@ -23,7 +31,7 @@ h1 {
   border-radius: 20px;
   background-color: #FF3366;
   font-family: sans-serif;
-  font-size: 100px;
+  font-size: 120px;
   color: #FF9999 ;
   height: 120px;
   width:120px;
@@ -33,20 +41,33 @@ h1 {
 }
 
 body {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
+  background: url(http://meloumusic.net/wp-content/uploads/2014/05/clouds-nature_00354581.jpg) no-repeat ;
+  background-size: cover;
 }
-.message {
-  font-family:fantasy;
-  font-size: 20px;
-}
+
+/*.message {
+  font-family:arial;
+  font-size: 25px;
+} */
 
 #main {
   float:left;
   padding-left: 150px;
+  width: auto;
 }
+
 #messages {
+  font-family:arial;
+  font-size: 25px;
+  color:000066;
+  font-weight: bold;
   float:right;
   margin-right: 150px;
+  position:absolute;
+  top: 105px;
+  right:0;
+  width: 500px;
 }
 
 button {
@@ -54,9 +75,10 @@ button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
-  /*  display: inline-block;*/
-    font-size: 16px;
+    font-size: 25px;
+    position: absolute;
+    top:455px;
 }
