@@ -256,7 +256,7 @@ if (element1.innerHTML === element5.innerHTML &&
 
 // diagonal top right to bottom left
 if (element3.innerHTML === element5.innerHTML &&
-    element5.innerHTML === element9.innerHTML){
+    element5.innerHTML === element7.innerHTML){
     document.getElementById("divSection3").classList.add("highlight");
     document.getElementById("divSection5").classList.add("highlight");
     document.getElementById("divSection7").classList.add("highlight");
