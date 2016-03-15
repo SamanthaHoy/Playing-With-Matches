@@ -41,9 +41,8 @@ p {
 }
 
 body {
-  /*background-color: lightblue;*/
   background: url(http://meloumusic.net/wp-content/uploads/2014/05/clouds-nature_00354581.jpg) no-repeat ;
-  background-size: cover;
+  background-size: 100% 140%;
 }
 
 /*.message {
